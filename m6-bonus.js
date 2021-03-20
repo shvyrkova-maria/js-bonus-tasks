@@ -32,16 +32,16 @@ const youngestUserMsg = (users) => {
 /* 
   2. В массиве users отфильтровать всех по полу, сначала female потом male 
 */
-const filtredUsersBySex = (users, sex) =>
+const filteredUsersBySex = (users, sex) =>
   users.filter((user) => user.sex === sex);
-// console.log(filtredUsersBySex(users, "male"));
+// console.log(filteredUsersBySex(users, "male"));
 
-const filtredMaleUsers = (users) => users.filter(({ sex }) => sex === "male");
-// console.log(filtredMaleUsers(users));
+const filteredMaleUsers = (users) => users.filter(({ sex }) => sex === "male");
+// console.log(filteredMaleUsers(users));
 
-const filtredFemaleUsers = (users) =>
+const filteredFemaleUsers = (users) =>
   users.filter(({ sex }) => sex === "female");
-// console.log(filtredFemaleUsers(users));
+// console.log(filteredFemaleUsers(users));
 
 /* 
   3. В массиве users найти пользователя по имени Марина
