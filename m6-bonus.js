@@ -60,20 +60,6 @@ const checkUserByName = (users, name) =>
   !!! Важно проверять что возраст не отрицательное число :)
 */
 
-const changeUserAge = (users) => {
-  return users.map((user) => {
-    if (user.sex === "male" && user.age > 0) {
-      user.age = user.age + 10;
-      return user;
-    }
-    if (user.sex === "female" && user.age > 0) {
-      user.age = user.age - 5;
-      return user;
-    }
-  });
-};
-// console.log(changeUserAge(users));
-
 const changeUsersAge = (users) => {
   return users
     .filter((user) => user.age > 0)
